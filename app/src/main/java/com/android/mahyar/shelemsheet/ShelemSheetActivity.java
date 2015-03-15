@@ -6,10 +6,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-<<<<<<< HEAD
 import android.widget.EditText;
-=======
->>>>>>> e9df573ca0671ae3a0723144faa33c516b36506b
 import android.widget.TextView;
 
 
