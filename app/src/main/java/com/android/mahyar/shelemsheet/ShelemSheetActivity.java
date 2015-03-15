@@ -4,14 +4,29 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
 
 
 public class ShelemSheetActivity extends ActionBarActivity {
+
+    private Button mSubmitButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_shelem_sheet);
+
+        mSubmitButton = (Button)findViewById(R.id.buttonSubmit);
+        mSubmitButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                TextView finalA =  (TextView)findViewById(R.id.textViewAFinal);
+                finalA.setText("120");
+
+            }
+        });
     }
 
 
