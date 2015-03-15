@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 public class ShelemSheetActivity extends ActionBarActivity {
@@ -23,10 +24,15 @@ public class ShelemSheetActivity extends ActionBarActivity {
         mSubmitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                TextView finalA =  (TextView)findViewById(R.id.textViewAFinal);
                 EditText pointA = (EditText)findViewById(R.id.editTextA);
-                finalA.setText(pointA.getText());
-
+                int pointA_int = Integer.parseInt(pointA.getText().toString());
+                if (pointA_int > 165 || pointA_int < 0){
+                    Toast.makeText(ShelemSheetActivity.this,R.string.unvalidNumber,Toast.LENGTH_SHORT).show();
+                }
+                else {
+                    TextView finalA = (TextView) findViewById(R.id.textViewAFinal);
+                    finalA.setText(pointA.getText());
+                }
             }
         });
     }
