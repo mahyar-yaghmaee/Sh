@@ -5,7 +5,8 @@
     <string name="teamAFinalPoints">A final Points</string>
     <string name="teamBFinalPoints">B final Points</string>
     <string name="submitButton">Submit</string>
-    <string name="unvalidNumber">error: number must be between 0 and 165</string>
+    <string name="emptyNumber">Please enter the results</string>
+    <string name="unvalidNumber">error: number must be between -165 and 165</string>
 
     <string name="action_settings">Settings</string>
 </resources>

@@ -25,13 +25,23 @@ public class ShelemSheetActivity extends ActionBarActivity {
             @Override
             public void onClick(View v) {
                 EditText pointA = (EditText)findViewById(R.id.editTextA);
-                int pointA_int = Integer.parseInt(pointA.getText().toString());
-                if (pointA_int > 165 || pointA_int < 0){
-                    Toast.makeText(ShelemSheetActivity.this,R.string.unvalidNumber,Toast.LENGTH_SHORT).show();
-                }
+                EditText pointB = (EditText)findViewById(R.id.editTextB);
+                //1 - check if fields are empty
+                if (pointA.getText().toString().isEmpty() || pointB.getText().toString().isEmpty())
+                    Toast.makeText(ShelemSheetActivity.this,R.string.emptyNumber,Toast.LENGTH_SHORT).show();
+
                 else {
-                    TextView finalA = (TextView) findViewById(R.id.textViewAFinal);
-                    finalA.setText(pointA.getText());
+                    int pointA_int = Integer.parseInt(pointA.getText().toString());
+                    int pointB_int = Integer.parseInt(pointB.getText().toString());
+                    // make sure in range
+                    if (pointA_int > 165 || pointA_int < -165 || pointB_int > 165 || pointB_int < -165) {
+                        Toast.makeText(ShelemSheetActivity.this, R.string.unvalidNumber, Toast.LENGTH_SHORT).show();
+                    } else {
+                        TextView finalA = (TextView) findViewById(R.id.textViewAFinal);
+                        finalA.setText(pointA.getText().toString());
+                        TextView finalB = (TextView) findViewById(R.id.textViewBFinal);
+                        finalB.setText(pointB.getText().toString());
+                    }
                 }
             }
         });
