@@ -33,7 +33,8 @@ public class ShelemSheetActivity extends ActionBarActivity {
                 EditText pointA = (EditText)findViewById(R.id.editTextA);
                 EditText pointB = (EditText)findViewById(R.id.editTextB);
 
-                TextView[] leftCol = new TextView[10];
+                TextView[] leftCol = new TextView[19];
+                TextView[] rightCol = new TextView[19];
                 //1 - check if fields are empty
                 if (pointA.getText().toString().isEmpty() || pointB.getText().toString().isEmpty())
                     Toast.makeText(ShelemSheetActivity.this,R.string.emptyNumber,Toast.LENGTH_SHORT).show();
@@ -52,8 +53,11 @@ public class ShelemSheetActivity extends ActionBarActivity {
 
                         //set results line by line
               //          leftCol[colNumber] = (TextView)findViewById(R.id.textViewL0);
-                        leftCol[colNumber] = getId(colNumber);
+                        leftCol[colNumber] = getIdLeft(colNumber);
                         leftCol[colNumber].setText(pointA.getText());
+                        rightCol[colNumber] = getIdRight(colNumber);
+                        rightCol[colNumber].setText(pointB.getText());
+
                         colNumber = colNumber + 1;
                         //clear numbers after submit
                         pointA.setText("");
@@ -90,7 +94,7 @@ public class ShelemSheetActivity extends ActionBarActivity {
 
 
     //probably need to map ids for loop
-    public TextView getId(int colNumber){
+    public TextView getIdLeft(int colNumber){
         switch (colNumber){
             case 0: return (TextView)findViewById(R.id.textViewL0);
             case 1: return (TextView)findViewById(R.id.textViewL1);
@@ -102,9 +106,44 @@ public class ShelemSheetActivity extends ActionBarActivity {
             case 7: return (TextView)findViewById(R.id.textViewL7);
             case 8: return (TextView)findViewById(R.id.textViewL8);
             case 9: return (TextView)findViewById(R.id.textViewL9);
-
+            case 10: return (TextView)findViewById(R.id.textViewL10);
+            case 11: return (TextView)findViewById(R.id.textViewL11);
+            case 12: return (TextView)findViewById(R.id.textViewL12);
+            case 13: return (TextView)findViewById(R.id.textViewL13);
+            case 14: return (TextView)findViewById(R.id.textViewL14);
+            case 15: return (TextView)findViewById(R.id.textViewL15);
+            case 16: return (TextView)findViewById(R.id.textViewL16);
+            case 17: return (TextView)findViewById(R.id.textViewL17);
+            case 18: return (TextView)findViewById(R.id.textViewL18);
         }
     return null;
 
     }
+    //probably need to map ids for loop
+    public TextView getIdRight(int colNumber){
+        switch (colNumber){
+            case 0: return (TextView)findViewById(R.id.textViewR0);
+            case 1: return (TextView)findViewById(R.id.textViewR1);
+            case 2: return (TextView)findViewById(R.id.textViewR2);
+            case 3: return (TextView)findViewById(R.id.textViewR3);
+            case 4: return (TextView)findViewById(R.id.textViewR4);
+            case 5: return (TextView)findViewById(R.id.textViewR5);
+            case 6: return (TextView)findViewById(R.id.textViewR6);
+            case 7: return (TextView)findViewById(R.id.textViewR7);
+            case 8: return (TextView)findViewById(R.id.textViewR8);
+            case 9: return (TextView)findViewById(R.id.textViewR9);
+            case 10: return (TextView)findViewById(R.id.textViewR10);
+            case 11: return (TextView)findViewById(R.id.textViewR11);
+            case 12: return (TextView)findViewById(R.id.textViewR12);
+            case 13: return (TextView)findViewById(R.id.textViewR13);
+            case 14: return (TextView)findViewById(R.id.textViewR14);
+            case 15: return (TextView)findViewById(R.id.textViewR15);
+            case 16: return (TextView)findViewById(R.id.textViewR16);
+            case 17: return (TextView)findViewById(R.id.textViewR17);
+            case 18: return (TextView)findViewById(R.id.textViewR18);
+        }
+        return null;
+
+    }
+
 }
