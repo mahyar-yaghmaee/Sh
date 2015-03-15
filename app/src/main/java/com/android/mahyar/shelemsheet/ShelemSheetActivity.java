@@ -16,10 +16,12 @@ public class ShelemSheetActivity extends ActionBarActivity {
     private Button mSubmitButton;
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_shelem_sheet);
+
 
         mSubmitButton = (Button)findViewById(R.id.buttonSubmit);
         mSubmitButton.setOnClickListener(new View.OnClickListener() {
@@ -27,6 +29,7 @@ public class ShelemSheetActivity extends ActionBarActivity {
             public void onClick(View v) {
                 EditText pointA = (EditText)findViewById(R.id.editTextA);
                 EditText pointB = (EditText)findViewById(R.id.editTextB);
+
                 //1 - check if fields are empty
                 if (pointA.getText().toString().isEmpty() || pointB.getText().toString().isEmpty())
                     Toast.makeText(ShelemSheetActivity.this,R.string.emptyNumber,Toast.LENGTH_SHORT).show();
@@ -74,4 +77,6 @@ public class ShelemSheetActivity extends ActionBarActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+
 }
