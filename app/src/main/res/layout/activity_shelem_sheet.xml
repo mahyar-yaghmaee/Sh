@@ -77,9 +77,6 @@
         android:layout_alignRight="@+id/textViewTeamBTitle"
         android:layout_alignEnd="@+id/textViewTeamBTitle" />
 
-
-
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -89,6 +86,7 @@
         android:layout_below="@+id/buttonSubmit"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
+
 
     <TextView
         android:layout_width="wrap_content"
@@ -280,15 +278,8 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="@string/smallText"
-        android:id="@+id/textViewL19"
-        android:layout_below="@+id/textViewL18"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+
+
 
     <TextView
         android:layout_width="wrap_content"
@@ -470,14 +461,12 @@
         android:layout_alignRight="@+id/textViewBFinal"
         android:layout_alignEnd="@+id/textViewBFinal" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="@string/smallText"
-        android:id="@+id/textViewR19"
-        android:layout_alignBottom="@+id/textViewL19"
-        android:layout_alignRight="@+id/textViewBFinal"
-        android:layout_alignEnd="@+id/textViewBFinal" />
+
+
+
+
+
+
+
 
 </RelativeLayout>
