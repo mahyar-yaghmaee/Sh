@@ -10,10 +10,13 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import org.w3c.dom.Text;
+
 
 public class ShelemSheetActivity extends ActionBarActivity {
 
     private Button mSubmitButton;
+    int colNumber = 0;
 
 
 
@@ -30,6 +33,7 @@ public class ShelemSheetActivity extends ActionBarActivity {
                 EditText pointA = (EditText)findViewById(R.id.editTextA);
                 EditText pointB = (EditText)findViewById(R.id.editTextB);
 
+                TextView[] leftCol = new TextView[10];
                 //1 - check if fields are empty
                 if (pointA.getText().toString().isEmpty() || pointB.getText().toString().isEmpty())
                     Toast.makeText(ShelemSheetActivity.this,R.string.emptyNumber,Toast.LENGTH_SHORT).show();
@@ -41,10 +45,16 @@ public class ShelemSheetActivity extends ActionBarActivity {
                     if (pointA_int > 165 || pointA_int < -165 || pointB_int > 165 || pointB_int < -165) {
                         Toast.makeText(ShelemSheetActivity.this, R.string.unvalidNumber, Toast.LENGTH_SHORT).show();
                     } else {
-                        TextView finalA = (TextView) findViewById(R.id.textViewAFinal);
+                        TextView finalA = (TextView)findViewById(R.id.textViewAFinal);
                         finalA.setText(pointA.getText().toString());
                         TextView finalB = (TextView) findViewById(R.id.textViewBFinal);
                         finalB.setText(pointB.getText().toString());
+
+                        //set results line by line
+              //          leftCol[colNumber] = (TextView)findViewById(R.id.textViewL0);
+                        leftCol[colNumber] = getId(colNumber);
+                        leftCol[colNumber].setText(pointA.getText());
+                        colNumber = colNumber + 1;
                         //clear numbers after submit
                         pointA.setText("");
                         pointB.setText("");
@@ -79,4 +89,22 @@ public class ShelemSheetActivity extends ActionBarActivity {
     }
 
 
+    //probably need to map ids for loop
+    public TextView getId(int colNumber){
+        switch (colNumber){
+            case 0: return (TextView)findViewById(R.id.textViewL0);
+            case 1: return (TextView)findViewById(R.id.textViewL1);
+            case 2: return (TextView)findViewById(R.id.textViewL2);
+            case 3: return (TextView)findViewById(R.id.textViewL3);
+            case 4: return (TextView)findViewById(R.id.textViewL4);
+            case 5: return (TextView)findViewById(R.id.textViewL5);
+            case 6: return (TextView)findViewById(R.id.textViewL6);
+            case 7: return (TextView)findViewById(R.id.textViewL7);
+            case 8: return (TextView)findViewById(R.id.textViewL8);
+            case 9: return (TextView)findViewById(R.id.textViewL9);
+
+        }
+    return null;
+
+    }
 }
