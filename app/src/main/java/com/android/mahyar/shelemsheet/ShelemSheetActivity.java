@@ -47,18 +47,21 @@ public class ShelemSheetActivity extends ActionBarActivity {
                         Toast.makeText(ShelemSheetActivity.this, R.string.unvalidNumber, Toast.LENGTH_SHORT).show();
                     } else {
                         TextView finalA = (TextView)findViewById(R.id.textViewAFinal);
-                        finalA.setText(pointA.getText().toString());
+                  //      finalA.setText(pointA.getText().toString());
+
+
+
                         TextView finalB = (TextView) findViewById(R.id.textViewBFinal);
                         finalB.setText(pointB.getText().toString());
 
                         //set results line by line
-              //          leftCol[colNumber] = (TextView)findViewById(R.id.textViewL0);
                         leftCol[colNumber] = getIdLeft(colNumber);
                         leftCol[colNumber].setText(pointA.getText());
                         rightCol[colNumber] = getIdRight(colNumber);
                         rightCol[colNumber].setText(pointB.getText());
-
                         colNumber = colNumber + 1;
+                        //set final points
+                        finalA.setText(calcLeftPoints());
                         //clear numbers after submit
                         pointA.setText("");
                         pointB.setText("");
@@ -94,6 +97,7 @@ public class ShelemSheetActivity extends ActionBarActivity {
 
 
     //probably need to map ids for loop
+    //TODO: remove hardcodig!!
     public TextView getIdLeft(int colNumber){
         switch (colNumber){
             case 0: return (TextView)findViewById(R.id.textViewL0);
@@ -143,6 +147,26 @@ public class ShelemSheetActivity extends ActionBarActivity {
             case 18: return (TextView)findViewById(R.id.textViewR18);
         }
         return null;
+
+    }
+
+    public String calcLeftPoints(){
+        //TODO: Note this should not be hardcoded!
+        int[] leftPoints = new int[18];
+        for (int i=0;i<18;i++)
+            leftPoints[i]=0;
+
+        TextView L0 = getIdLeft(0);
+        //TODO: this is just for empty text, note if we hae text in "smallText"(in strings.xml) it crashes!
+        if (!L0.getText().toString().isEmpty())
+            leftPoints[0] = Integer.parseInt(L0.getText().toString());
+
+
+        TextView L1 = getIdLeft(1);
+        if (!L1.getText().toString().isEmpty())
+            leftPoints[1] = Integer.parseInt(L1.getText().toString());
+
+        return String.valueOf(leftPoints[0]+leftPoints[1]);
 
     }
 
