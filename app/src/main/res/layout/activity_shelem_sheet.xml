@@ -14,9 +14,7 @@
         android:id="@+id/textViewTeamATitle"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginLeft="37dp"
-        android:layout_marginStart="37dp" />
+        android:layout_alignParentStart="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -24,15 +22,14 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/teamBTitle"
         android:id="@+id/textViewTeamBTitle"
-        android:layout_above="@+id/textViewBFinal"
-        android:layout_alignLeft="@+id/textViewBFinal"
-        android:layout_alignStart="@+id/textViewBFinal" />
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/teamAFinalPoints"
+        android:text="@string/teamPoints"
         android:id="@+id/textViewAFinal"
         android:layout_below="@+id/textViewTeamATitle"
         android:layout_alignLeft="@+id/textViewTeamATitle"
@@ -42,7 +39,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/teamBFinalPoints"
+        android:text="@string/teamPoints"
         android:id="@+id/textViewBFinal"
         android:layout_alignTop="@+id/textViewAFinal"
         android:layout_alignParentRight="true"
@@ -63,12 +60,11 @@
         android:ems="10"
         android:id="@+id/editTextA"
         android:layout_below="@+id/textViewAFinal"
-        android:layout_alignLeft="@+id/textViewAFinal"
-        android:layout_alignStart="@+id/textViewAFinal"
         android:layout_marginTop="87dp"
-        android:layout_toStartOf="@+id/buttonSubmit"
         android:layout_alignRight="@+id/textViewTeamATitle"
-        android:layout_alignEnd="@+id/textViewTeamATitle" />
+        android:layout_alignEnd="@+id/textViewTeamATitle"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <EditText
         android:layout_width="wrap_content"

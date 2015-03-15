@@ -2,8 +2,7 @@
     <string name="app_name">Shelem Sheet</string>
     <string name="teamATitle">Team A</string>
     <string name="teamBTitle">Team B</string>
-    <string name="teamAFinalPoints">A final Points</string>
-    <string name="teamBFinalPoints">B final Points</string>
+    <string name="teamPoints">Points</string>
     <string name="submitButton">Submit</string>
     <string name="emptyNumber">Please enter the results</string>
     <string name="unvalidNumber">error: number must be between -165 and 165</string>
