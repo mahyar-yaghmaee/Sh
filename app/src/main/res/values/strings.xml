@@ -1,6 +1,9 @@
 <resources>
-    <string name="app_name">shelemSheet</string>
+    <string name="app_name">Shelem Sheet</string>
+    <string name="teamATitle">Team A</string>
+    <string name="teamBTitle">Team B</string>
+    <string name="teamAFinalPoints">A final Points</string>
+    <string name="teamBFinalPoints">B final Points</string>
 
-    <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
 </resources>
