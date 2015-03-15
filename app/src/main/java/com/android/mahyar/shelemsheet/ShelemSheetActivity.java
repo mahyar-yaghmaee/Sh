@@ -15,6 +15,7 @@ public class ShelemSheetActivity extends ActionBarActivity {
 
     private Button mSubmitButton;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,11 +42,12 @@ public class ShelemSheetActivity extends ActionBarActivity {
                         finalA.setText(pointA.getText().toString());
                         TextView finalB = (TextView) findViewById(R.id.textViewBFinal);
                         finalB.setText(pointB.getText().toString());
+                        //clear numbers after submit
+                        pointA.setText("");
+                        pointB.setText("");
                     }
                 }
-                //clear numbers after submit
-                pointA.setText("");
-                pointB.setText("");
+
             }
         });
     }
