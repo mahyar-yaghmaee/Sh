@@ -4,6 +4,7 @@
     <string name="teamBTitle">Team B</string>
     <string name="teamAFinalPoints">A final Points</string>
     <string name="teamBFinalPoints">B final Points</string>
+    <string name="submitButton">Submit</string>
 
     <string name="action_settings">Settings</string>
 </resources>
