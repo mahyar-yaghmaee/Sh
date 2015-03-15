@@ -43,6 +43,9 @@ public class ShelemSheetActivity extends ActionBarActivity {
                         finalB.setText(pointB.getText().toString());
                     }
                 }
+                //clear numbers after submit
+                pointA.setText("");
+                pointB.setText("");
             }
         });
     }
