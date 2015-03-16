@@ -77,6 +77,7 @@
         android:layout_alignRight="@+id/textViewTeamBTitle"
         android:layout_alignEnd="@+id/textViewTeamBTitle" />
 
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -305,6 +306,37 @@
         android:text="@string/smallText"
         android:id="@+id/textViewL22"
         android:layout_below="@+id/textViewL21"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/smallText"
+        android:id="@+id/textViewL23"
+        android:layout_below="@+id/textViewL22"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/smallText"
+        android:id="@+id/textViewL24"
+        android:layout_below="@+id/textViewL23"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/smallText"
+        android:id="@+id/textViewL25"
+        android:layout_below="@+id/textViewL24"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
@@ -539,6 +571,36 @@
         android:text="@string/smallText"
         android:id="@+id/textViewR22"
         android:layout_below="@+id/textViewR21"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/smallText"
+        android:id="@+id/textViewR23"
+        android:layout_below="@+id/textViewR22"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/smallText"
+        android:id="@+id/textViewR24"
+        android:layout_below="@+id/textViewR23"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/smallText"
+        android:id="@+id/textViewR25"
+        android:layout_below="@+id/textViewR24"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 

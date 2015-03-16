@@ -17,7 +17,7 @@ public class ShelemSheetActivity extends ActionBarActivity {
 
     private Button mSubmitButton;
     int colNumber = 0;
-    int MAX_ROW_NUM = 23;
+    int MAX_ROW_NUM = 26;
 
 
 
@@ -119,6 +119,9 @@ public class ShelemSheetActivity extends ActionBarActivity {
             case 20: return (TextView)findViewById(R.id.textViewL20);
             case 21: return (TextView)findViewById(R.id.textViewL21);
             case 22: return (TextView)findViewById(R.id.textViewL22);
+            case 23: return (TextView)findViewById(R.id.textViewL23);
+            case 24: return (TextView)findViewById(R.id.textViewL24);
+            case 25: return (TextView)findViewById(R.id.textViewL25);
         }
     return null;
 
@@ -149,6 +152,9 @@ public class ShelemSheetActivity extends ActionBarActivity {
             case 20: return (TextView)findViewById(R.id.textViewR20);
             case 21: return (TextView)findViewById(R.id.textViewR21);
             case 22: return (TextView)findViewById(R.id.textViewR22);
+            case 23: return (TextView)findViewById(R.id.textViewR23);
+            case 24: return (TextView)findViewById(R.id.textViewR24);
+            case 25: return (TextView)findViewById(R.id.textViewR25);
         }
         return null;
 
