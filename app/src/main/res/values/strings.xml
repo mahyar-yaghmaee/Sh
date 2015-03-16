@@ -6,7 +6,7 @@
     <string name="submitButton">Submit</string>
     <string name="emptyNumber">Please enter the results</string>
     <string name="invalidNumber">Error: invalid number</string>
-    <string name="smallText"></string>
+    <string name="smallText">STRING</string>
 
     <string name="action_settings">Settings</string>
 </resources>

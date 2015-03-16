@@ -17,6 +17,7 @@ public class ShelemSheetActivity extends ActionBarActivity {
 
     private Button mSubmitButton;
     int colNumber = 0;
+    int MAX_ROW_NUM = 23;
 
 
 
@@ -33,8 +34,8 @@ public class ShelemSheetActivity extends ActionBarActivity {
                 EditText pointA = (EditText)findViewById(R.id.editTextA);
                 EditText pointB = (EditText)findViewById(R.id.editTextB);
 
-                TextView[] leftCol = new TextView[19];
-                TextView[] rightCol = new TextView[19];
+                TextView[] leftCol = new TextView[MAX_ROW_NUM];
+                TextView[] rightCol = new TextView[MAX_ROW_NUM];
                 //1 - check if fields are empty
                 if (pointA.getText().toString().isEmpty() || pointB.getText().toString().isEmpty())
                     Toast.makeText(ShelemSheetActivity.this,R.string.emptyNumber,Toast.LENGTH_SHORT).show();
@@ -114,6 +115,10 @@ public class ShelemSheetActivity extends ActionBarActivity {
             case 16: return (TextView)findViewById(R.id.textViewL16);
             case 17: return (TextView)findViewById(R.id.textViewL17);
             case 18: return (TextView)findViewById(R.id.textViewL18);
+            case 19: return (TextView)findViewById(R.id.textViewL19);
+            case 20: return (TextView)findViewById(R.id.textViewL20);
+            case 21: return (TextView)findViewById(R.id.textViewL21);
+            case 22: return (TextView)findViewById(R.id.textViewL22);
         }
     return null;
 
@@ -140,6 +145,10 @@ public class ShelemSheetActivity extends ActionBarActivity {
             case 16: return (TextView)findViewById(R.id.textViewR16);
             case 17: return (TextView)findViewById(R.id.textViewR17);
             case 18: return (TextView)findViewById(R.id.textViewR18);
+            case 19: return (TextView)findViewById(R.id.textViewR19);
+            case 20: return (TextView)findViewById(R.id.textViewR20);
+            case 21: return (TextView)findViewById(R.id.textViewR21);
+            case 22: return (TextView)findViewById(R.id.textViewR22);
         }
         return null;
 
@@ -149,12 +158,12 @@ public class ShelemSheetActivity extends ActionBarActivity {
     public String calcLeftPoints(){
         //TODO: Note this should not be hardcoded!
         int result = 0;
-        int[] leftPoints = new int[18];
-        for (int i=0;i<18;i++)
+        int[] leftPoints = new int[MAX_ROW_NUM];
+        for (int i=0 ; i<MAX_ROW_NUM ; i++)
             leftPoints[i]=0;
-        TextView[] leftCol = new TextView[18];
+        TextView[] leftCol = new TextView[MAX_ROW_NUM];
 
-        for (int i=0 ; i<18 ; i++) {
+        for (int i=0 ; i<MAX_ROW_NUM ; i++) {
             leftCol[i] = getIdLeft(i);
             //TODO: this is just for empty text, note if we hae text in "smallText"(in strings.xml) it crashes!
             if (!leftCol[i].getText().toString().isEmpty())
@@ -168,12 +177,12 @@ public class ShelemSheetActivity extends ActionBarActivity {
     public String calcRightPoints(){
         //TODO: Note this should not be hardcoded!
         int result = 0;
-        int[] rightPoints = new int[18];
-        for (int i=0;i<18;i++)
+        int[] rightPoints = new int[MAX_ROW_NUM];
+        for (int i=0 ; i<MAX_ROW_NUM ; i++)
             rightPoints[i]=0;
-        TextView[] rightCol = new TextView[18];
+        TextView[] rightCol = new TextView[MAX_ROW_NUM];
 
-        for (int i=0 ; i<18 ; i++) {
+        for (int i=0 ; i<MAX_ROW_NUM ; i++) {
             rightCol[i] = getIdRight(i);
             //TODO: this is just for empty text, note if we hae text in "smallText"(in strings.xml) it crashes!
             if (!rightCol[i].getText().toString().isEmpty())

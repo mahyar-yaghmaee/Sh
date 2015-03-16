@@ -87,17 +87,6 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="@string/smallText"
-        android:id="@+id/textViewR0"
-        android:layout_alignBottom="@+id/textViewL0"
-        android:layout_alignRight="@+id/textViewBFinal"
-        android:layout_alignEnd="@+id/textViewBFinal" />
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -278,8 +267,60 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/smallText"
+        android:id="@+id/textViewL19"
+        android:layout_below="@+id/textViewL18"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/smallText"
+        android:id="@+id/textViewL20"
+        android:layout_below="@+id/textViewL19"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/smallText"
+        android:id="@+id/textViewL21"
+        android:layout_below="@+id/textViewL20"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/smallText"
+        android:id="@+id/textViewL22"
+        android:layout_below="@+id/textViewL21"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/smallText"
+        android:id="@+id/textViewR0"
+        android:layout_below="@+id/buttonSubmit"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -287,9 +328,9 @@
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:text="@string/smallText"
         android:id="@+id/textViewR1"
-        android:layout_alignBottom="@+id/textViewL1"
-        android:layout_alignRight="@+id/textViewBFinal"
-        android:layout_alignEnd="@+id/textViewBFinal" />
+        android:layout_below="@+id/textViewR0"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -297,9 +338,9 @@
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:text="@string/smallText"
         android:id="@+id/textViewR2"
-        android:layout_alignBottom="@+id/textViewL2"
-        android:layout_alignRight="@+id/textViewBFinal"
-        android:layout_alignEnd="@+id/textViewBFinal" />
+        android:layout_below="@+id/textViewR1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -307,9 +348,9 @@
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:text="@string/smallText"
         android:id="@+id/textViewR3"
-        android:layout_alignBottom="@+id/textViewL3"
-        android:layout_alignRight="@+id/textViewBFinal"
-        android:layout_alignEnd="@+id/textViewBFinal" />
+        android:layout_below="@+id/textViewR2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -317,9 +358,9 @@
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:text="@string/smallText"
         android:id="@+id/textViewR4"
-        android:layout_alignBottom="@+id/textViewL4"
-        android:layout_alignRight="@+id/textViewBFinal"
-        android:layout_alignEnd="@+id/textViewBFinal" />
+        android:layout_below="@+id/textViewR3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -327,9 +368,9 @@
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:text="@string/smallText"
         android:id="@+id/textViewR5"
-        android:layout_alignBottom="@+id/textViewL5"
-        android:layout_alignRight="@+id/textViewBFinal"
-        android:layout_alignEnd="@+id/textViewBFinal" />
+        android:layout_below="@+id/textViewR4"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -337,9 +378,9 @@
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:text="@string/smallText"
         android:id="@+id/textViewR6"
-        android:layout_alignBottom="@+id/textViewL6"
-        android:layout_alignRight="@+id/textViewBFinal"
-        android:layout_alignEnd="@+id/textViewBFinal" />
+        android:layout_below="@+id/textViewR5"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -347,9 +388,9 @@
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:text="@string/smallText"
         android:id="@+id/textViewR7"
-        android:layout_alignBottom="@+id/textViewL7"
-        android:layout_alignRight="@+id/textViewBFinal"
-        android:layout_alignEnd="@+id/textViewBFinal" />
+        android:layout_below="@+id/textViewR6"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -357,9 +398,9 @@
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:text="@string/smallText"
         android:id="@+id/textViewR8"
-        android:layout_alignBottom="@+id/textViewL8"
-        android:layout_alignRight="@+id/textViewBFinal"
-        android:layout_alignEnd="@+id/textViewBFinal" />
+        android:layout_below="@+id/textViewR7"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -367,9 +408,9 @@
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:text="@string/smallText"
         android:id="@+id/textViewR9"
-        android:layout_alignBottom="@+id/textViewL9"
-        android:layout_alignRight="@+id/textViewBFinal"
-        android:layout_alignEnd="@+id/textViewBFinal" />
+        android:layout_below="@+id/textViewR8"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -377,9 +418,9 @@
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:text="@string/smallText"
         android:id="@+id/textViewR10"
-        android:layout_alignBottom="@+id/textViewL10"
-        android:layout_alignRight="@+id/textViewBFinal"
-        android:layout_alignEnd="@+id/textViewBFinal" />
+        android:layout_below="@+id/textViewR9"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -387,9 +428,9 @@
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:text="@string/smallText"
         android:id="@+id/textViewR11"
-        android:layout_alignBottom="@+id/textViewL11"
-        android:layout_alignRight="@+id/textViewBFinal"
-        android:layout_alignEnd="@+id/textViewBFinal" />
+        android:layout_below="@+id/textViewR10"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -397,9 +438,9 @@
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:text="@string/smallText"
         android:id="@+id/textViewR12"
-        android:layout_alignBottom="@+id/textViewL12"
-        android:layout_alignRight="@+id/textViewBFinal"
-        android:layout_alignEnd="@+id/textViewBFinal" />
+        android:layout_below="@+id/textViewR11"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -407,9 +448,9 @@
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:text="@string/smallText"
         android:id="@+id/textViewR13"
-        android:layout_alignBottom="@+id/textViewL13"
-        android:layout_alignRight="@+id/textViewBFinal"
-        android:layout_alignEnd="@+id/textViewBFinal" />
+        android:layout_below="@+id/textViewR12"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -417,9 +458,9 @@
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:text="@string/smallText"
         android:id="@+id/textViewR14"
-        android:layout_alignBottom="@+id/textViewL14"
-        android:layout_alignRight="@+id/textViewBFinal"
-        android:layout_alignEnd="@+id/textViewBFinal" />
+        android:layout_below="@+id/textViewR13"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -427,9 +468,9 @@
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:text="@string/smallText"
         android:id="@+id/textViewR15"
-        android:layout_alignBottom="@+id/textViewL15"
-        android:layout_alignRight="@+id/textViewBFinal"
-        android:layout_alignEnd="@+id/textViewBFinal" />
+        android:layout_below="@+id/textViewR14"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -437,9 +478,9 @@
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:text="@string/smallText"
         android:id="@+id/textViewR16"
-        android:layout_alignBottom="@+id/textViewL16"
-        android:layout_alignRight="@+id/textViewBFinal"
-        android:layout_alignEnd="@+id/textViewBFinal" />
+        android:layout_below="@+id/textViewR15"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -447,9 +488,9 @@
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:text="@string/smallText"
         android:id="@+id/textViewR17"
-        android:layout_alignBottom="@+id/textViewL17"
-        android:layout_alignRight="@+id/textViewBFinal"
-        android:layout_alignEnd="@+id/textViewBFinal" />
+        android:layout_below="@+id/textViewR16"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -457,16 +498,49 @@
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:text="@string/smallText"
         android:id="@+id/textViewR18"
-        android:layout_alignBottom="@+id/textViewL18"
-        android:layout_alignRight="@+id/textViewBFinal"
-        android:layout_alignEnd="@+id/textViewBFinal" />
+        android:layout_below="@+id/textViewR17"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/smallText"
+        android:id="@+id/textViewR19"
+        android:layout_below="@+id/textViewR18"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/smallText"
+        android:id="@+id/textViewR20"
+        android:layout_below="@+id/textViewR19"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/smallText"
+        android:id="@+id/textViewR21"
+        android:layout_below="@+id/textViewR20"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
-
-
-
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/smallText"
+        android:id="@+id/textViewR22"
+        android:layout_below="@+id/textViewR21"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
 
 </RelativeLayout>
