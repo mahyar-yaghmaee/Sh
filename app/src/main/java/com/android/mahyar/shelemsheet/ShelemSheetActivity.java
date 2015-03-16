@@ -43,17 +43,11 @@ public class ShelemSheetActivity extends ActionBarActivity {
                     int pointA_int = Integer.parseInt(pointA.getText().toString());
                     int pointB_int = Integer.parseInt(pointB.getText().toString());
                     // make sure in range
-                    if (pointA_int > 165 || pointA_int < -165 || pointB_int > 165 || pointB_int < -165) {
-                        Toast.makeText(ShelemSheetActivity.this, R.string.unvalidNumber, Toast.LENGTH_SHORT).show();
+                    if (pointA_int > 330 || pointA_int < -330 || pointB_int > 330 || pointB_int < -330) {
+                        Toast.makeText(ShelemSheetActivity.this, R.string.invalidNumber, Toast.LENGTH_SHORT).show();
                     } else {
                         TextView finalA = (TextView)findViewById(R.id.textViewAFinal);
-                  //      finalA.setText(pointA.getText().toString());
-
-
-
                         TextView finalB = (TextView) findViewById(R.id.textViewBFinal);
-                        finalB.setText(pointB.getText().toString());
-
                         //set results line by line
                         leftCol[colNumber] = getIdLeft(colNumber);
                         leftCol[colNumber].setText(pointA.getText());
@@ -62,6 +56,7 @@ public class ShelemSheetActivity extends ActionBarActivity {
                         colNumber = colNumber + 1;
                         //set final points
                         finalA.setText(calcLeftPoints());
+                        finalB.setText(calcRightPoints());
                         //clear numbers after submit
                         pointA.setText("");
                         pointB.setText("");
@@ -150,24 +145,42 @@ public class ShelemSheetActivity extends ActionBarActivity {
 
     }
 
+    //cal total results for left side
     public String calcLeftPoints(){
         //TODO: Note this should not be hardcoded!
+        int result = 0;
         int[] leftPoints = new int[18];
         for (int i=0;i<18;i++)
             leftPoints[i]=0;
+        TextView[] leftCol = new TextView[18];
 
-        TextView L0 = getIdLeft(0);
-        //TODO: this is just for empty text, note if we hae text in "smallText"(in strings.xml) it crashes!
-        if (!L0.getText().toString().isEmpty())
-            leftPoints[0] = Integer.parseInt(L0.getText().toString());
+        for (int i=0 ; i<18 ; i++) {
+            leftCol[i] = getIdLeft(i);
+            //TODO: this is just for empty text, note if we hae text in "smallText"(in strings.xml) it crashes!
+            if (!leftCol[i].getText().toString().isEmpty())
+                leftPoints[i] = Integer.parseInt(leftCol[i].getText().toString());
+            result = result + leftPoints[i];
+        }
+        return String.valueOf(result);
+    }
 
+    //cal total results for right side
+    public String calcRightPoints(){
+        //TODO: Note this should not be hardcoded!
+        int result = 0;
+        int[] rightPoints = new int[18];
+        for (int i=0;i<18;i++)
+            rightPoints[i]=0;
+        TextView[] rightCol = new TextView[18];
 
-        TextView L1 = getIdLeft(1);
-        if (!L1.getText().toString().isEmpty())
-            leftPoints[1] = Integer.parseInt(L1.getText().toString());
-
-        return String.valueOf(leftPoints[0]+leftPoints[1]);
-
+        for (int i=0 ; i<18 ; i++) {
+            rightCol[i] = getIdRight(i);
+            //TODO: this is just for empty text, note if we hae text in "smallText"(in strings.xml) it crashes!
+            if (!rightCol[i].getText().toString().isEmpty())
+                rightPoints[i] = Integer.parseInt(rightCol[i].getText().toString());
+            result = result + rightPoints[i];
+        }
+        return String.valueOf(result);
     }
 
 }
