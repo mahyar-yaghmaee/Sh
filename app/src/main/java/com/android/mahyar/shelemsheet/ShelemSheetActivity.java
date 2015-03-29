@@ -12,7 +12,6 @@ import android.widget.Toast;
 
 import org.w3c.dom.Text;
 
-
 public class ShelemSheetActivity extends ActionBarActivity {
 
     private Button mSubmitButton;
@@ -38,14 +37,18 @@ public class ShelemSheetActivity extends ActionBarActivity {
                 TextView[] rightCol = new TextView[MAX_ROW_NUM];
                 //1 - check if fields are empty
                 if (pointA.getText().toString().isEmpty() || pointB.getText().toString().isEmpty())
-                    Toast.makeText(ShelemSheetActivity.this,R.string.emptyNumber,Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ShelemSheetActivity.this,
+                            R.string.emptyNumber,Toast.LENGTH_SHORT).show();
 
                 else {
                     int pointA_int = Integer.parseInt(pointA.getText().toString());
                     int pointB_int = Integer.parseInt(pointB.getText().toString());
                     // make sure in range
-                    if (pointA_int > 330 || pointA_int < -330 || pointB_int > 330 || pointB_int < -330) {
-                        Toast.makeText(ShelemSheetActivity.this, R.string.invalidNumber, Toast.LENGTH_SHORT).show();
+                    //TODO: config this
+                    if (pointA_int > 330 || pointA_int < -330 || pointB_int > 330 ||
+                            pointB_int < -330 || pointA_int%5 != 0 || pointB_int%5 !=0) {
+                        Toast.makeText(ShelemSheetActivity.this, R.string.invalidNumber,
+                                Toast.LENGTH_SHORT).show();
                     } else {
                         TextView finalA = (TextView)findViewById(R.id.textViewAFinal);
                         TextView finalB = (TextView) findViewById(R.id.textViewBFinal);
