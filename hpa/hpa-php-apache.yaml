@@ -1,24 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: php-apache
+  name: hello-kubernetes
 spec:
-  selector:
-    matchLabels:
-      run: php-apache
-  replicas: 1
-  template:
-    metadata:
-      labels:
-        run: php-apache
-    spec:
-      containers:
-      - name: php-apache
-        image: k8s.gcr.io/hpa-example
-        ports:
-        - containerPort: 80
-        resources:
-          limits:
-            cpu: 500m
-          requests:
-            cpu: 200m
+  replicas: 3
+  selector:
+    matchLabels:
+      app: hello-kubernetes
+  template:
+    metadata:
+      labels:
+        app: hello-kubernetes
+    spec:
+      containers:
+      - name: hello-kubernetes
+        image: paulbouwer/hello-kubernetes:1.8
+        ports:
+        - containerPort: 8080
