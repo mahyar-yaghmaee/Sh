@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: php-apache
-        image: paulbouwer/hello-kubernetes:1.8
+        image: k8s.gcr.io/hpa-example
         ports:
-        - containerPort: 8080
+        - containerPort: 80
