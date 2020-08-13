@@ -1,24 +1,24 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: php-apache
+  name: php-apache
 spec:
-  selector:
-    matchLabels:
-      app: php-apache
-  replicas: 1
-  template:
-    metadata:
-      labels:
-        app: php-apache
-    spec:
-      containers:
-      - name: php-apache
-        image: k8s.gcr.io/hpa-example
-        resources:
-          requests:
-            cpu: "100m"
-            memory: "500Mi"
-          limits:
-            cpu: "100m"
-            memory: "500Mi"
+  selector:
+    matchLabels:
+      app: php-apache
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: php-apache
+    spec:
+      containers:
+      - name: php-apache
+        image: k8s.gcr.io/hpa-example
+        resources:
+          requests:
+            cpu: "100m"
+            memory: "500Mi"
+          limits:
+            cpu: "100m"
+            memory: "500Mi"
