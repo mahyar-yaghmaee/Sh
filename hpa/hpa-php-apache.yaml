@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: hello-kubernetes
+  name: php-apache
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
-      app: hello-kubernetes
+      app: php-apache
   template:
     metadata:
       labels:
-        app: hello-kubernetes
+        app: php-apache
     spec:
       containers:
-      - name: hello-kubernetes
+      - name: php-apache
         image: paulbouwer/hello-kubernetes:1.8
         ports:
         - containerPort: 8080
